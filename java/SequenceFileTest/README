@@ -1,0 +1,10 @@
+
+export HADOOP_CLASSPATH=.
+javac -classpath $HADOOP_HOME/hadoop-core.jar *.java
+
+#Write
+hadoop SequenceFileReadDemo numbers.seq
+
+#Read
+hadoop SequenceFileReadDemo numbers.seq
+
